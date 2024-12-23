@@ -1,0 +1,74 @@
+---------------------------------------------------------------------
+TAG v3.0.1
+---------------------------------------------------------------------
+NEW FEATURES
+* Circuito operativo completo para comprar y vender criptos.
+* Listado de cotizaciones utilizando cache (Caffeine).
+* Tests de controllers (utilizando MockMvc).
+
+NOTES
+* Se pueden agregar más tests unitarios y de controllers.
+* Refactorizar lógica de negocio embedida en controllers y pasarla a los servicios.
+
+KNOWN ISSUES
+* Se puede mejorar el coverage y la calidad (revisar SonarCloud)
+
+
+---------------------------------------------------------------------
+TAG v3.0.0
+---------------------------------------------------------------------
+NEW FEATURES (lo que están entregando y está funcionando):
+* Seguridad con JWT
+* WS para mostrar las cotizaciones de las últimas 24hs para un cripto activo dado
+* Crear un test de arquitectura
+* Auditoria de Web-Services con aspecto y Logback
+* Métricas y monitoreo con Actuators y Prometheus
+
+NOTES (ej: funcionalidad que falta, alguna consideración especial):
+* Implementar caché en servicio de cotizaciones
+* Completar workflow operativo, implementando validaciones de negocio
+* Agregar tests de integración de endpoints
+
+KNOWN ISSUES (ej: funcionalidad que saben que están funcionando diferente, algún error conocido en la funcionalidad terminada, etc) :
+* Mejorar coverage
+* Agregar casos de prueba en Postman
+
+
+---------------------------------------------------------------------
+TAG v2.0.0
+---------------------------------------------------------------------
+NEW FEATURES (lo que están entregando y está funcionando):
+* Documentación de API con Swagger
+* Datos generados al levantar la aplicación
+* Coverage con JaCoCo a través de SonarCloud
+* Testing de endpoints usando Postman
+* WS para expresar intención de compra/venta
+* WS que muestra las intenciones activas de compra/venta
+* WS que muestra cotizaciones de criptoactivos
+* WS que muestra el volumen operado por un usuario
+
+NOTES (ej: funcionalidad que falta, alguna consideración especial):
+* Falta procesar la transacción informada por un usuario
+* Falta el testing end-to-end de dos controllers
+
+KNOWN ISSUES (ej: funcionalidad que saben que están funcionando diferente, algún error conocido en la funcionalidad terminada, etc) :
+* El build no pasa siempre en verde (falta coverage)
+* Falta agregar pruebas con Postman
+* El volumen operado y el listado de cotizaciones podrían mejorarse (revisar los DTOs)
+
+
+---------------------------------------------------------------------
+TAG v1.0.0
+---------------------------------------------------------------------
+NEW FEATURES (lo que están entregando y está funcionando):
+* Github Actions with SonarCloud
+* API Swagger
+* H2 Persistence
+* Users API (register user, list users, retrieve user, delete user)
+
+NOTES (ej: funcionalidad que falta, alguna consideración especial):
+* No unit tests yet.
+
+KNOWN ISSUES (ej: funcionalidad que saben que están funcionando diferente, algún error conocido en la funcionalidad terminada, etc) :
+* Users delete should be logic.
+* Password must be encrypted.
